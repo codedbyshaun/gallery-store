@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+}
+
+.container {
+    width: 20%;    
+}
+
+.container img {
+    width: 100%;
+}
+
+.row .container:focus,
+.row .container:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
