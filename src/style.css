@@ -3,22 +3,325 @@
     padding: 0;
 }
 
-.row{
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0; padding: 0;
+    display: block;
+  }
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-image: url(images/bgUltra.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav ul {
     display: flex;
 }
 
-.container {
-    width: 20%;
-    background-color: rgb(248, 190, 32);    
+.nav li {
+    list-style-type: none;
+    padding: 20px;
 }
 
-.container img {
+.logo {
+    width: 60px;
+    margin-top: -24px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(163, 187, 149);
+    font-weight: 700;
+}
+
+.hero-section {
+    
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+}
+
+.art-container {
     width: 100%;
+    position: relative;
+    transition: transform 500ms;
+    display: block;
+    padding: 10px 20px;
 }
 
-.row .container:focus,
-.row .container:hover {
+
+
+.art-container img {
+    width: 100%;
+    opacity: 1;
+    height: auto;
+    display: block;
+}
+
+.row .art-container:focus,
+.row .art-container:hover {
     transform: scale(1.5);
     z-index: 1;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(240, 36, 196);
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.art-container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* start image background color: match to color of image */
+
+#img1 {
+    background-color: rgb(56, 82, 84);
+}
+
+#img2 {
+    background-color: rgb(103, 85, 67);
+}
+
+#img3 {
+    background-color: rgb(110, 40, 55);
+}
+
+#img4 {
+    background-color: rgb(56, 78, 86);
+}
+
+#img5 {
+    background-color: rgb(88, 56, 115);
+}
+
+#img6 {
+    background-color: rgb(58, 134, 141);
+}
+
+#img7 {
+    background-color: rgb(102, 107, 112);
+}
+
+#img8 {
+    background-color: rgb(144, 158, 135);
+}
+
+#img9 {
+    background-color: rgb(89, 92, 95);
+}
+
+#img10 {
+    background-color: rgb(58, 98, 112);
+}
+
+/* end image background color */
+
+/* start  contact form section */
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.288);
+    color: rgb(87, 84, 84);
+    font-weight: 300;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    outline: 0;
+    text-decoration: none;
+
+}
+
+.dark .contact-form {
+    background-color: rgb(38, 38, 38);
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+    color: rgb(128, 128, 128);
+    width: 600px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 0;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 0;
+    border-bottom: 1px solid #f5f5f5;
+    resize: vertical
+        /* Allow user to vertically resize textarea (not horizontally) */
+}
+
+.dark input[type=text],
+select,
+textarea {
+    color: rgb(128, 128, 128);
+    background-color: rgba(38, 38, 38, 0.404);
+}
+
+#subject {
+    color: rgb(128, 128, 128);
+    background-color: rgba(255, 255, 255, 0.486);
+    font-weight: 600;
+    width: 600px;
+}
+
+.dark #subject {
+    color: rgb(128, 128, 128);
+    background-color: rgba(38, 38, 38, 0.466);
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(255, 127, 80);
+    color: rgb(238, 238, 238);
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: rgb(252, 106, 53);
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    align-items: center;
+}
+
+/* end contact form section */
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+/* start background pattern + animation */
+
+/* end background pattern + animation */
+
+@media only screen and (max-width: 1008px) {
+    .text {
+        font-size: 10px;
+        padding: 32px 16px;
+    }
+
+    .row {
+        display: block;
+        padding: 0;       
+    }
+
+    .art-container {
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    body {
+        
+        
+    }
+    
+    .hero-section {
+        background-image: url(images/aestheticBG.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .row {
+        display: block;
+        padding: 40px;
+        
+       
+    }
+
+    .art-container {
+        width: 40%;
+        position: relative;
+        display: block; 
+        top: 100px;
+        left: 110px;       
+    }
+
+    .art-container img {
+        width: 100%;
+        position: relative;
+        display: block; 
+        top: 100px;
+        left: 110px;       
+    }
+
+    .row .art-container:focus,
+    .row .art-container:hover {
+        transform: none;
+        z-index: 1;
+    }
+
+    .text {
+        font-size: 32px;
+        padding: 32px 16px;
+    }
+
+    .contact-form {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+    }
 }
 

@@ -7,49 +7,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artist Showcase</title>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <section>
+        <nav>
+            <header>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#footer-contact">CONTACT</a></li>
+                        <li>
+                            <img class="logo" src="src/images/coffeeLogo.png" alt="logo">
+                        </li>
+                        <li><a href="https://www.instagram.com">INSTAGRAM</a></li>
+                        <li><a href="https://www.twitter.com">TWITTER</a></li>
+                    </ul>
+                </div>
+            </header>
+        </nav>
+    </section>
+
+
     <div class="hero-section">
 
         <div class="row">
-            <div class="container">
-                <img src="src/images/east1.jpg" alt="peaceful landscape">
+            <div class="art-container"> <!--wrap whole container in a> tag-->
+                <img src="src/images/berlinII.png" alt="peaceful landscape">
+                <div class="middle" id="img1">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/east2.jpg" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/styleOfKlimtBoy-1.png" alt="peaceful landscape">
+                <div class="middle" id="img2">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/east3.jpg" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/sunriseOnNeptuneAI.png" alt="peaceful landscape">
+                <div class="middle" id="img3">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/east4.jpg" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/hongKongVanV1.png" alt="peaceful landscape">
+                <div class="middle" id="img4">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/east5.jpg" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/swedeBoyv1.png" alt="peaceful landscape">
+                <div class="middle" id="img5">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="container">
-                <img src="src/images/gameBackgroundPastel.png" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/vanGoJellyV2.png" alt="peaceful landscape">
+                <div class="middle" id="img6">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/retroArcadeBackground.png" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/arizonaV3.png" alt="peaceful landscape">
+                <div class="middle" id="img7">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
+            <div class="art-container">
                 <img src="src/images/vanGoghMoon.png" alt="peaceful landscape">
+                <div class="middle" id="img8">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/vidGameRetroBackground.png" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/turkishCastleV2.png" alt="peaceful landscape">
+                <div class="middle" id="img9">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
-            <div class="container">
-                <img src="src/images/nightcity1.jpeg" alt="peaceful landscape">
+            <div class="art-container">
+                <img src="src/images/nightVanGoV1.png" alt="peaceful landscape">
+                <div class="middle" id="img10">
+                    <div class="text">Sample Text</div>
+                </div>
             </div>
         </div>
 
-    </div>
+    </div>   
+
+
+
+
+    <section class="contact-form">
+        <div id="footer-contact">
+            <h2>Let's get in touch</h2>
+            <!-- <p>email@email.com</p>  -->
+            <div class="form-container">
+                <!-- <h2>Contact me</h2> -->
+                <form action="action_page.php">
+    
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name">
+    
+                    <label for="lname"></label>
+                    <input type="text" id="lname" name="subject" placeholder="Subject">
+    
+                    <label for="subject"></label>
+                    <textarea id="subject" name="subject" placeholder="Your message here"
+                        style="height:200px"></textarea>
+    
+                    <input type="submit" value="Submit">
+    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer><span>codedbyshaun.com 2022</span></footer>
+
+
 
     <script href="src/app.js"></script>
 </body>
