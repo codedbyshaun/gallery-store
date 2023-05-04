@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+ content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+
 html {
     width: 100%;
     height: 100%;
