@@ -1,2 +1,3 @@
-# art-gallery-store
-# gallery-store
+# Art Gallery Store
+
+A fully responsive e-commerce store selling artworks as digital prints.
