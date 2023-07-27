@@ -1,21 +1,21 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+const switchElement = document.querySelector('.switch') // Day-Night mode toggle
 
-export const navLinks = [
-  {
-    id: "home",
-    title: "Home",
-  },
-  {
-    id: "features",
-    title: "Features",
-  },
-  
-  {
-    id: "product",
-    title: "Product",
-  },
-  {
-    id: "clients",
-    title: "Clients",
-  },
-];
+const hamburgerButton = document.getElementById('hamburger') // Hamburger menu toggle
+const navList = document.getElementById('nav-list')
+const icon = document.querySelector('.hamburger i')
+
+switchElement.addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+})
+
+function toggleButton() {
+  navList.classList.toggle('show')
+}
+
+// Hamburger menu toggle
+hamburgerButton.addEventListener('click', () => {
+  navList.classList.toggle('show');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-times');
+  switchElement.classList.toggle('switch-hide')
+})
